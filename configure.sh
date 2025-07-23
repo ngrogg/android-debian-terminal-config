@@ -33,6 +33,12 @@ function runProgram(){
     printf "%s\n" \
     "Configure" \
     "----------------------------------------------------"
+
+    ## Install packages
+
+    ## Put config files in place
+
+    ## System config changes
 }
 
 # Main, read passed flags
