@@ -21,3 +21,7 @@ To bootstrap install download the script directly and run it:<br>
 `wget https://raw.githubusercontent.com/ngrogg/android-debian-terminal-config/refs/heads/main/configure.sh` <br> <br>
 
 Set executable bit if needed.
+
+## Images
+![System Screenshot 1](./images/Screenshot_20250724-032739.jpg) <br>
+![System Screenshot 2](./images/Screenshot_20250724-033014.jpg) <br>
