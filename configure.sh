@@ -49,8 +49,16 @@ function runProgram(){
     git clone https://github.com/ngrogg/android-debian-terminal-config.git
     
     ## Put config files in place
+    cp android-debian-terminal-config/files/.tmux.conf ~/.tmux.conf
+    cp android-debian-terminal-config/files/.vimrc ~/.vimrc
+    cp android-debian-terminal-config/files/.zshrc ~/.zshrc
 
     ## System config changes
+    ### Create zsh files
+    mkdir -p ~/.zsh/cache
+
+    ### Change shell to zsh
+    chsh -s $(which zsh)
 }
 
 # Main, read passed flags
