@@ -36,13 +36,16 @@ function runProgram(){
 
     ## Install packages
     sudo apt install -y \ 
+        dnsutils \
         g++ \
         git \
+        net-tools \
         python-is-python3 \
         python3 \ 
         python3-dev \ 
         tmux \
         vim-nox \
+        whois \
         zsh
 
     ## Clone repo, use HTTPS so an SSH key is not needed
