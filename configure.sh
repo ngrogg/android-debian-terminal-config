@@ -39,6 +39,7 @@ function runProgram(){
         dnsutils \
         g++ \
         git \
+        links \
         net-tools \
         python-is-python3 \
         python3 \ 
@@ -46,6 +47,7 @@ function runProgram(){
         tmux \
         vim-nox \
         whois \
+        wireshark \
         zsh
 
     ## Clone repo, use HTTPS so an SSH key is not needed
@@ -62,6 +64,10 @@ function runProgram(){
 
     ### Change shell to zsh
     chsh -s $(which zsh)
+
+    #### Add user to wireshark group
+    sudo usermod -aG wireshark $(whoami)
+
 }
 
 # Main, read passed flags
