@@ -35,15 +35,15 @@ function runProgram(){
     "----------------------------------------------------"
 
     ## Install packages
-    sudo apt install -y \ 
-        dnsutils \
+    sudo apt install -y \
+        bind9-dnsutils \
         g++ \
         git \
         links \
         net-tools \
         python-is-python3 \
-        python3 \ 
-        python3-dev \ 
+        python3 \
+        python3-dev \
         tmux \
         vim-nox \
         whois \
@@ -52,7 +52,7 @@ function runProgram(){
 
     ## Clone repo, use HTTPS so an SSH key is not needed
     git clone https://github.com/ngrogg/android-debian-terminal-config.git
-    
+
     ## Put config files in place
     cp android-debian-terminal-config/files/.tmux.conf ~/.tmux.conf
     cp android-debian-terminal-config/files/.vimrc ~/.vimrc
@@ -62,11 +62,11 @@ function runProgram(){
     ### Create zsh files
     mkdir -p ~/.zsh/cache
 
+    ### Set droid user password, required to change shell to ZSH
+    sudo passwd droid
+
     ### Change shell to zsh
     chsh -s $(which zsh)
-
-    #### Add user to wireshark group
-    sudo usermod -aG wireshark $(whoami)
 
 }
 
