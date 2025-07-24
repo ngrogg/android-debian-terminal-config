@@ -45,6 +45,9 @@ function runProgram(){
         vim-nox \
         zsh
 
+    ## Clone repo, use HTTPS so an SSH key is not needed
+    git clone https://github.com/ngrogg/android-debian-terminal-config.git
+    
     ## Put config files in place
 
     ## System config changes
