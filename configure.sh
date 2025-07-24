@@ -35,6 +35,15 @@ function runProgram(){
     "----------------------------------------------------"
 
     ## Install packages
+    sudo apt install -y \ 
+        g++ \
+        git \
+        python-is-python3 \
+        python3 \ 
+        python3-dev \ 
+        tmux \
+        vim-nox \
+        zsh
 
     ## Put config files in place
 
