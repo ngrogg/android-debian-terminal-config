@@ -17,7 +17,7 @@ Rough process: <br>
 * **configure.sh**, BASH script to configure environment.
 
 ## Bootstrap
-TODO: Updated to main branch version before merging <br>
 To bootstrap install download the script directly and run it:<br>
-`wget https://raw.githubusercontent.com/ngrogg/android-debian-terminal-config/refs/heads/testing/configure.sh` <br> <br>
-Executable bit is already set.
+`wget https://raw.githubusercontent.com/ngrogg/android-debian-terminal-config/refs/heads/main/configure.sh` <br> <br>
+
+Set executable bit if needed.
