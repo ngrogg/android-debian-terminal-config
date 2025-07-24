@@ -45,6 +45,7 @@ function runProgram(){
         python-is-python3 \
         python3 \
         python3-dev \
+        ranger \
         tmux \
         vim-nox \
         whois \
