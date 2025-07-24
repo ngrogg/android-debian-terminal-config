@@ -39,6 +39,7 @@ function runProgram(){
         bind9-dnsutils \
         g++ \
         git \
+        htop \
         links \
         net-tools \
         python-is-python3 \
