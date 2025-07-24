@@ -62,11 +62,20 @@ function runProgram(){
     ### Create zsh files
     mkdir -p ~/.zsh/cache
 
+    ### Create directory for git repos
+    mkdir -p ~/Documents/gits
+
     ### Set droid user password, required to change shell to ZSH
     sudo passwd droid
 
     ### Change shell to zsh
     chsh -s $(which zsh)
+
+    ### Generate an SSH key
+    ssh-keygen -t ed25519 -C "$(hostname) key"
+
+    ## Remove https cloned git repo
+    rm -rf android-debian-terminal-config
 
 }
 

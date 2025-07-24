@@ -59,7 +59,7 @@ set number
 set relativenumber
 
 " Set vim colorscheme
-colorscheme pablo
+colorscheme habamax
 
 " configure CursorLines
 set cursorline
