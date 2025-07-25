@@ -37,15 +37,18 @@ function runProgram(){
     ## Install packages
     sudo apt install -y \
         bind9-dnsutils \
+        build-essential \
         g++ \
         git \
         htop \
-        links \
+        links2 \
         net-tools \
+        nmap \
         python-is-python3 \
         python3 \
         python3-dev \
         ranger \
+        rsync \
         tmux \
         vim-nox \
         whois \
