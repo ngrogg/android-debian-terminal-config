@@ -13,8 +13,10 @@ Rough process: <br>
 5. Wait for download and initial setup
 
 ## Files
-* **files**, tertiary files to configure the environment. See README.md for files in directory.
-* **configure.sh**, BASH script to configure environment.
+* **configure.sh**, BASH script to configure environment. <br>
+  Arguments: <br>
+  - **help/Help**, display help message and exit.
+  - **configure/Configure**, install packages and download config files for minimal development environment.
 
 ## Bootstrap
 To bootstrap install download the script directly and run it:<br>
