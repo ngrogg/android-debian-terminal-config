@@ -38,8 +38,11 @@ function runProgram(){
     sudo apt install -y \
         bind9-dnsutils \
         build-essential \
+        ca-certificates \
+        cmake \
         curl \
         g++ \
+        gdb \
         git \
         htop \
         links2 \
@@ -50,6 +53,7 @@ function runProgram(){
         python3-dev \
         ranger \
         rsync \
+        strace \
         tmux \
         vim-nox \
         wget \
