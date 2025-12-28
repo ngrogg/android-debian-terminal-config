@@ -22,7 +22,7 @@ function helpFunction(){
     " " \
     "help/Help" \
     "* Display this help message and exit" \
-    " "
+    " " \
     "configure/Configure" \
     "* Install packages and put config files in place" \
     "Usage, just run the script"
@@ -38,6 +38,7 @@ function runProgram(){
     sudo apt install -y \
         bind9-dnsutils \
         build-essential \
+        curl \
         g++ \
         git \
         htop \
@@ -51,17 +52,15 @@ function runProgram(){
         rsync \
         tmux \
         vim-nox \
+        wget \
         whois \
         wireshark \
         zsh
 
-    ## Clone repo, use HTTPS so an SSH key is not needed
-    git clone https://github.com/ngrogg/android-debian-terminal-config.git
-
     ## Put config files in place
-    cp android-debian-terminal-config/files/.tmux.conf ~/.tmux.conf
-    cp android-debian-terminal-config/files/.vimrc ~/.vimrc
-    cp android-debian-terminal-config/files/.zshrc ~/.zshrc
+    wget https://raw.githubusercontent.com/ngrogg/dotfiles/refs/heads/main/.tmux.conf -O ~/.tmux.conf
+    wget https://raw.githubusercontent.com/ngrogg/dotfiles/refs/heads/main/.vimrc.simple -O ~/.vimrc
+    wget https://raw.githubusercontent.com/ngrogg/dotfiles/refs/heads/main/.zshrc -O ~/.zshrc
 
     ## System config changes
     ### Create zsh files
@@ -78,9 +77,6 @@ function runProgram(){
 
     ### Generate an SSH key
     ssh-keygen -t ed25519 -C "$(hostname) key"
-
-    ## Remove https cloned git repo
-    rm -rf android-debian-terminal-config
 
 }
 
